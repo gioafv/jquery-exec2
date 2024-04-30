@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastro de Tarefas - EBAC</title>
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Cadastrar Tarefas</h1>
+                <h2>Cadastre Matérias - Semestre</h2>
+            </header>
+            <form id="#formadd-materias">
+                <input
+                    type="text"
+                    placeholder="Nome da atividade"
+                    required
+                    id="add-nova-materia"
+                />
+                <button type="submit">Cadastrar</button>
+            </form>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th scope="row">Atividades cadastradas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="new-mats"></tr>
+                </tbody>
+                <tfoot>
+                    <tr></tr>
+                </tfoot>
+            </table>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
